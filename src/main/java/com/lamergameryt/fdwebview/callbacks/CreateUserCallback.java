@@ -84,7 +84,7 @@ public class CreateUserCallback extends CustomCallback {
 
         // Requires face_recognition to be installed as a python dependency.
         ProcessBuilder builder = new ProcessBuilder(
-            "python3",
+            "python",
             script.getAbsolutePath(),
             imageFile.getAbsolutePath()
         );

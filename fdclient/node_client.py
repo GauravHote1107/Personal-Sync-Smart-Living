@@ -3,7 +3,7 @@ import requests
 
 class NodeClient:
     _BASE_URL = "http://192.168.4.1/"
-    _DEFAULT_VALUES = {"D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 1023, "D6": 0, "D7": 0, "D8": 0}
+    _DEFAULT_VALUES = {"D1": 0, "D2": 0, "D3": 0, "D4": 0, "D5": 1024, "D6": 0, "D7": 0, "D8": 0}
 
     def __init__(self):
         self.values_cache = requests.get(self._BASE_URL + "state").json()

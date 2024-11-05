@@ -10,7 +10,7 @@ class SQLClient:
             host="localhost",
             port=3306,
             user="root",
-            password="root",
+            password="Gh1947",
             database="smart_home",
             cursorclass=pymysql.cursors.DictCursor,
         )

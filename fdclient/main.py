@@ -68,11 +68,11 @@ while True:
             node_client.update_pin(setting, settings[setting])
     else:
         for setting in node_client.values_cache:
-            node_client.update_pin(setting, 0)
+            node_client.reset_pin(setting)
 
     if cv2.waitKey(1) & 0xFF == ord("q"):
         for setting in node_client.values_cache:
-            node_client.update_pin(setting, 0)
+            node_client.reset_pin(setting)
         break
 
 video_capture.release()
